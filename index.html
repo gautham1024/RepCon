@@ -169,25 +169,6 @@
         </script>
         
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-  const logoLetters = document.querySelectorAll('.logo span');
-  const words = document.querySelector('.words');
-
-  // Animate logo letters
-  logoLetters.forEach((letter, index) => {
-      setTimeout(() => {
-          letter.classList.add('show');
-      }, index * 200);
-  });
-
-  // Animate words
-  setTimeout(() => {
-      words.classList.add('show');
-  }, logoLetters.length * 200);
-});
-
-  </script>
-    <script>
         document.addEventListener('DOMContentLoaded', function() {
             const infoText = document.getElementById('infoText');
             window.addEventListener('scroll', function() {

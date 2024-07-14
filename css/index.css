@@ -304,7 +304,6 @@ marquee {
         height: 100%;
         margin: 0;
         padding: 0;
-        overflow-x: hidden;
     }
     .container {
         display: flex;
@@ -355,6 +354,7 @@ marquee {
 
     .statistics {
         height: 230px; /* Adjust height as needed */
+        overflow-x: hidden;
     }
 
     .container {
@@ -411,6 +411,7 @@ marquee {
         gap: 10px;
         text-align: center;
         padding-bottom: 20px; /* Adjust padding as needed */
+        overflow-x: hidden;
     }
 
     .companylogo, .location, .contactinfo {
