@@ -299,17 +299,12 @@ marquee {
 /* Additional CSS for responsiveness */
 
 @media (max-width: 767px) {
-    * {
+    html,body{
+        width: 100%;
+        height: 100%;
         margin: 0;
         padding: 0;
-        box-sizing: border-box;
-        width: auto;
-    }
-
-    /* Adjust Body Overflow */
-    body {
         overflow-x: hidden;
-        width: 105%;
     }
     .container {
         display: flex;
