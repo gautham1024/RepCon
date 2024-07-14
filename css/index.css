@@ -299,15 +299,23 @@ marquee {
 /* Additional CSS for responsiveness */
 
 @media (max-width: 767px) {
-    body{
+    * {
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
+        width: auto;
+    }
+
+    /* Adjust Body Overflow */
+    body {
+        overflow-x: hidden;
+        width: 104.3%;
     }
     .container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 800px;
+        height: auto;
     }
 
     .left-side {
@@ -315,21 +323,23 @@ marquee {
         width: 100%;
         margin: 10px 0;
         text-align: justify;
+        padding: 20px; /* Adjust padding as needed */
     }
 
     .right-side {
         order: 2;
         width: 100%;
         margin: 10px 0;
+        overflow: hidden; /* Ensure contents do not overflow */
     }
 
     .left-side p {
-        font-size: 16px;
+        font-size: 16px; /* Adjust font size as needed */
     }
 
     .carousel {
         width: 100%;
-        height: 300px; /* Adjust the height as needed */
+        height: 300px; /* Adjust height as needed */
     }
 
     .carousel-inner {
@@ -348,15 +358,15 @@ marquee {
         display: none;
     }
 
-    .statistics{
-        height: 230px;
+    .statistics {
+        height: 230px; /* Adjust height as needed */
     }
 
     .container {
         overflow: hidden;
         width: 100%;
         position: relative;
-        height: 900px;
+        height: auto;
     }
 
     .row {
@@ -369,7 +379,6 @@ marquee {
         flex: 0 0 100%; /* Full width on smaller screens */
         margin: 10px 0;
         transform: translateX(100%);
-    
     }
 
     /* Keyframes for sliding in from right */
