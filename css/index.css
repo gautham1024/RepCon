@@ -309,7 +309,7 @@ marquee {
     /* Adjust Body Overflow */
     body {
         overflow-x: hidden;
-        width: 104.3%;
+        width: 105%;
     }
     .container {
         display: flex;
