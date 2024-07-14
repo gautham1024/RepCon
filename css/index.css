@@ -357,6 +357,9 @@ marquee {
         height: 230px; /* Adjust height as needed */
         overflow-x: hidden;
     }
+    .stat-item{
+        width: 10px;
+    }
 
     .container {
         overflow: hidden;
