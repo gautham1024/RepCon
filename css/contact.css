@@ -1,0 +1,206 @@
+/* Navbar CSS */
+.custom-navbar {
+    background: linear-gradient(90deg, #6A6A6A, #4A4A4A);
+    padding: 10px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.navbar-brand img {
+    width: 120px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover img {
+    transform: scale(1.1);
+}
+
+.navbar-nav .nav-item {
+    margin-left: 20px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.nav-link {
+    color: #ffffff !important;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #f0f0f0 !important;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 8px 15px;
+    border-radius: 25px;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba%28255, 255, 255, 0.7%29" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+}
+
+/* Navbar Hover Effects */
+.custom-navbar .navbar-nav .nav-item:hover {
+    transform: translateY(-5px);
+}
+
+.custom-navbar .navbar-nav .nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ffffff;
+    transition: width 0.3s;
+    margin-top: 5px;
+}
+
+.custom-navbar .navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+.custom-navbar.scrolled {
+    background: linear-gradient(90deg, #333333, #555555);
+    padding: 5px 20px;
+}
+
+.custom-navbar.scrolled .navbar-brand img {
+    transform: scale(0.9);
+}
+
+.custom-navbar.scrolled .navbar-nav .nav-item {
+    margin-left: 15px;
+}
+
+/* Contact Page CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+   
+}
+
+.contact-section {
+    background-color: #ffffff;
+    padding: 40px 0;
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.contact-details, .contact-form-container {
+    flex: 1;
+}
+
+.contact-details {
+    max-width: 500px; /* Reduced max-width */
+    padding: 10px; /* Added padding */
+}
+
+.contact-form-container {
+    max-width: 500px; /* Reduced max-width */
+    padding: 10px; /* Added padding */
+}
+
+.company-name {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-align: center; /* Centered text */
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Reduced gap */
+    margin-bottom: 20px; /* Reduced margin-bottom */
+}
+
+.info-box {
+    background-color: #f9f9f9;
+    padding: 15px; /* Reduced padding */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s; /* Added box-shadow transition */
+}
+
+.info-box:hover {
+    transform: scale(1.02); /* Slightly reduced scale */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.info-box i {
+    color: #007BFF;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.info-box p {
+    font-size: 1em; /* Reduced font-size */
+    color: #555;
+}
+
+.map-container {
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-container h2 {
+    font-size: 1.8em; /* Reduced font-size */
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center; /* Centered text */
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contact-form label {
+    font-weight: bold;
+    color: #333;
+}
+
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 10px; /* Reduced padding */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9em; /* Reduced font-size */
+}
+
+#contact-form button {
+    padding: 12px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s; /* Added transform transition */
+}
+
+#contact-form button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Added button scale effect */
+}
