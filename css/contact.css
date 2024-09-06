@@ -204,3 +204,91 @@ body {
     background-color: #0056b3;
     transform: scale(1.05); /* Added button scale effect */
 }
+
+/* Media Queries for Responsive Design */
+
+/* For tablets and screens up to 992px wide */
+@media (max-width: 992px) {
+    .contact-container {
+        flex-direction: column; /* Stack elements vertically */
+        gap: 20px;
+    }
+
+    .contact-details, .contact-form-container, .map-container {
+        max-width: 100%;
+    }
+
+    .contact-details {
+        order: 1; /* First display the contact details */
+    }
+
+    .map-container {
+        order: 2; /* Display the map below the contact details */
+    }
+
+    .contact-form-container {
+        order: 3; /* Display the form below the map */
+    }
+
+    .company-name {
+        font-size: 2em; /* Slightly reduce the font size */
+    }
+}
+
+/* For mobile devices and screens up to 768px wide */
+@media (max-width: 768px) {
+    .contact-container {
+        padding: 15px;
+    }
+
+    .info-box {
+        padding: 10px;
+    }
+
+    .map-container iframe {
+        height: 300px; /* Reduce map height */
+    }
+
+    .company-name {
+        font-size: 1.8em; /* Reduce the font size for smaller screens */
+    }
+
+    #contact-form input, #contact-form textarea {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+
+    #contact-form button {
+        padding: 10px;
+        font-size: 1em;
+    }
+}
+
+/* For small mobile devices and screens up to 576px wide */
+@media (max-width: 576px) {
+    .contact-container {
+        padding: 10px;
+    }
+
+    .info-box {
+        padding: 8px;
+    }
+
+    .map-container iframe {
+        height: 250px; /* Further reduce map height for small devices */
+    }
+
+    .company-name {
+        font-size: 1.5em; /* Further reduce font size */
+    }
+
+    #contact-form input, #contact-form textarea {
+        padding: 6px;
+        font-size: 0.8em;
+    }
+
+    #contact-form button {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+}
